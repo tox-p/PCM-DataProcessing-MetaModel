@@ -6,6 +6,8 @@ import org.eclipse.emf.common.util.EList;
 
 import org.palladiosimulator.pcm.core.entity.Entity;
 
+import org.palladiosimulator.pcm.dataprocessing.dataprocessing.characteristics.Characterizable;
+
 import org.palladiosimulator.pcm.dataprocessing.dataprocessing.data.Data;
 
 import org.palladiosimulator.pcm.dataprocessing.dataprocessing.effectspecification.ProcessingEffectProvider;
@@ -31,7 +33,7 @@ import org.palladiosimulator.pcm.dataprocessing.dataprocessing.effectspecificati
  *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot outgoingDataIsUsed='self.outgoingData-&gt;size() = 0 or DataOperation.allInstances()-&gt;select(do | do.incomingData-&gt;exists(inData | self.outgoingData-&gt;includes(inData)))-&gt;excluding(self)-&gt;size() &gt; 0'"
  * @generated
  */
-public interface DataOperation extends Entity
+public interface DataOperation extends Entity, Characterizable
 {
 	/**
 	 * Returns the value of the '<em><b>Container</b></em>' container reference.

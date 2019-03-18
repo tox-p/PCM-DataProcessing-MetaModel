@@ -12,6 +12,11 @@ import org.eclipse.emf.ecore.EOperation;
 
 import org.palladiosimulator.pcm.core.entity.impl.EntityImpl;
 
+import org.palladiosimulator.pcm.dataprocessing.dataprocessing.characteristics.Characteristic;
+import org.palladiosimulator.pcm.dataprocessing.dataprocessing.characteristics.CharacteristicContainer;
+import org.palladiosimulator.pcm.dataprocessing.dataprocessing.characteristics.CharacteristicsPackage;
+import org.palladiosimulator.pcm.dataprocessing.dataprocessing.characteristics.Characterizable;
+
 import org.palladiosimulator.pcm.dataprocessing.dataprocessing.data.Data;
 
 import org.palladiosimulator.pcm.dataprocessing.dataprocessing.effectspecification.ProcessingEffectProvider;
@@ -28,6 +33,8 @@ import org.palladiosimulator.pcm.dataprocessing.dataprocessing.processing.Proces
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link org.palladiosimulator.pcm.dataprocessing.dataprocessing.processing.impl.DataOperationImpl#getCharacteristicContainers <em>Characteristic Containers</em>}</li>
+ *   <li>{@link org.palladiosimulator.pcm.dataprocessing.dataprocessing.processing.impl.DataOperationImpl#getCharacteristics <em>Characteristics</em>}</li>
  *   <li>{@link org.palladiosimulator.pcm.dataprocessing.dataprocessing.processing.impl.DataOperationImpl#getContainer <em>Container</em>}</li>
  *   <li>{@link org.palladiosimulator.pcm.dataprocessing.dataprocessing.processing.impl.DataOperationImpl#getIncomingData <em>Incoming Data</em>}</li>
  *   <li>{@link org.palladiosimulator.pcm.dataprocessing.dataprocessing.processing.impl.DataOperationImpl#getProcessingEffectProvider <em>Processing Effect Provider</em>}</li>
@@ -57,6 +64,28 @@ public abstract class DataOperationImpl extends EntityImpl implements DataOperat
 	protected EClass eStaticClass()
 	{
 		return ProcessingPackage.Literals.DATA_OPERATION;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public EList<CharacteristicContainer> getCharacteristicContainers()
+	{
+		return (EList<CharacteristicContainer>)eGet(CharacteristicsPackage.Literals.CHARACTERIZABLE__CHARACTERISTIC_CONTAINERS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public EList<Characteristic> getCharacteristics()
+	{
+		return (EList<Characteristic>)eGet(CharacteristicsPackage.Literals.CHARACTERIZABLE__CHARACTERISTICS, true);
 	}
 
 	/**
@@ -165,6 +194,46 @@ public abstract class DataOperationImpl extends EntityImpl implements DataOperat
 		{
 			throw new WrappedException(ite);
 		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass)
+	{
+		if (baseClass == Characterizable.class)
+		{
+			switch (derivedFeatureID)
+			{
+				case ProcessingPackage.DATA_OPERATION__CHARACTERISTIC_CONTAINERS: return CharacteristicsPackage.CHARACTERIZABLE__CHARACTERISTIC_CONTAINERS;
+				case ProcessingPackage.DATA_OPERATION__CHARACTERISTICS: return CharacteristicsPackage.CHARACTERIZABLE__CHARACTERISTICS;
+				default: return -1;
+			}
+		}
+		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass)
+	{
+		if (baseClass == Characterizable.class)
+		{
+			switch (baseFeatureID)
+			{
+				case CharacteristicsPackage.CHARACTERIZABLE__CHARACTERISTIC_CONTAINERS: return ProcessingPackage.DATA_OPERATION__CHARACTERISTIC_CONTAINERS;
+				case CharacteristicsPackage.CHARACTERIZABLE__CHARACTERISTICS: return ProcessingPackage.DATA_OPERATION__CHARACTERISTICS;
+				default: return -1;
+			}
+		}
+		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
 	}
 
 } //DataOperationImpl

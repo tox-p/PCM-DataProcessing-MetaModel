@@ -931,9 +931,9 @@ public class ProcessingPackageImpl extends EPackageImpl implements ProcessingPac
 
 		// Obtain other dependent packages
 		EntityPackage theEntityPackage = (EntityPackage)EPackage.Registry.INSTANCE.getEPackage(EntityPackage.eNS_URI);
+		CharacteristicsPackage theCharacteristicsPackage = (CharacteristicsPackage)EPackage.Registry.INSTANCE.getEPackage(CharacteristicsPackage.eNS_URI);
 		DataPackage theDataPackage = (DataPackage)EPackage.Registry.INSTANCE.getEPackage(DataPackage.eNS_URI);
 		EffectspecificationPackage theEffectspecificationPackage = (EffectspecificationPackage)EPackage.Registry.INSTANCE.getEPackage(EffectspecificationPackage.eNS_URI);
-		CharacteristicsPackage theCharacteristicsPackage = (CharacteristicsPackage)EPackage.Registry.INSTANCE.getEPackage(CharacteristicsPackage.eNS_URI);
 		RepositoryPackage theRepositoryPackage = (RepositoryPackage)EPackage.Registry.INSTANCE.getEPackage(RepositoryPackage.eNS_URI);
 		UtilPackage theUtilPackage = (UtilPackage)EPackage.Registry.INSTANCE.getEPackage(UtilPackage.eNS_URI);
 
@@ -947,6 +947,7 @@ public class ProcessingPackageImpl extends EPackageImpl implements ProcessingPac
 		// Add supertypes to classes
 		dataProcessingContainerEClass.getESuperTypes().add(theEntityPackage.getEntity());
 		dataOperationEClass.getESuperTypes().add(theEntityPackage.getEntity());
+		dataOperationEClass.getESuperTypes().add(theCharacteristicsPackage.getCharacterizable());
 		createDataOperationEClass.getESuperTypes().add(this.getDataOperation());
 		loadDataOperationEClass.getESuperTypes().add(this.getCreateDataOperation());
 		loadAllDataOperationEClass.getESuperTypes().add(this.getLoadDataOperation());

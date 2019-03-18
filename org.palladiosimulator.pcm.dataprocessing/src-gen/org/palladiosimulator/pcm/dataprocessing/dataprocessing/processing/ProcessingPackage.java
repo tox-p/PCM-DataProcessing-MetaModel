@@ -135,13 +135,31 @@ public interface ProcessingPackage extends EPackage
 	int DATA_OPERATION__ENTITY_NAME = EntityPackage.ENTITY__ENTITY_NAME;
 
 	/**
+	 * The feature id for the '<em><b>Characteristic Containers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_OPERATION__CHARACTERISTIC_CONTAINERS = EntityPackage.ENTITY_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Characteristics</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_OPERATION__CHARACTERISTICS = EntityPackage.ENTITY_FEATURE_COUNT + 1;
+
+	/**
 	 * The feature id for the '<em><b>Container</b></em>' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_OPERATION__CONTAINER = EntityPackage.ENTITY_FEATURE_COUNT + 0;
+	int DATA_OPERATION__CONTAINER = EntityPackage.ENTITY_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Incoming Data</b></em>' reference list.
@@ -150,7 +168,7 @@ public interface ProcessingPackage extends EPackage
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_OPERATION__INCOMING_DATA = EntityPackage.ENTITY_FEATURE_COUNT + 1;
+	int DATA_OPERATION__INCOMING_DATA = EntityPackage.ENTITY_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Processing Effect Provider</b></em>' reference.
@@ -159,7 +177,7 @@ public interface ProcessingPackage extends EPackage
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_OPERATION__PROCESSING_EFFECT_PROVIDER = EntityPackage.ENTITY_FEATURE_COUNT + 2;
+	int DATA_OPERATION__PROCESSING_EFFECT_PROVIDER = EntityPackage.ENTITY_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Outgoing Data</b></em>' reference list.
@@ -168,7 +186,7 @@ public interface ProcessingPackage extends EPackage
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_OPERATION__OUTGOING_DATA = EntityPackage.ENTITY_FEATURE_COUNT + 3;
+	int DATA_OPERATION__OUTGOING_DATA = EntityPackage.ENTITY_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Data Operation</em>' class.
@@ -177,7 +195,7 @@ public interface ProcessingPackage extends EPackage
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_OPERATION_FEATURE_COUNT = EntityPackage.ENTITY_FEATURE_COUNT + 4;
+	int DATA_OPERATION_FEATURE_COUNT = EntityPackage.ENTITY_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.palladiosimulator.pcm.dataprocessing.dataprocessing.processing.impl.CreateDataOperationImpl <em>Create Data Operation</em>}' class.
@@ -206,6 +224,24 @@ public interface ProcessingPackage extends EPackage
 	 * @ordered
 	 */
 	int CREATE_DATA_OPERATION__ENTITY_NAME = DATA_OPERATION__ENTITY_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Characteristic Containers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_DATA_OPERATION__CHARACTERISTIC_CONTAINERS = DATA_OPERATION__CHARACTERISTIC_CONTAINERS;
+
+	/**
+	 * The feature id for the '<em><b>Characteristics</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_DATA_OPERATION__CHARACTERISTICS = DATA_OPERATION__CHARACTERISTICS;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' container reference.
@@ -297,6 +333,24 @@ public interface ProcessingPackage extends EPackage
 	 * @ordered
 	 */
 	int LOAD_DATA_OPERATION__ENTITY_NAME = CREATE_DATA_OPERATION__ENTITY_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Characteristic Containers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOAD_DATA_OPERATION__CHARACTERISTIC_CONTAINERS = CREATE_DATA_OPERATION__CHARACTERISTIC_CONTAINERS;
+
+	/**
+	 * The feature id for the '<em><b>Characteristics</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOAD_DATA_OPERATION__CHARACTERISTICS = CREATE_DATA_OPERATION__CHARACTERISTICS;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' container reference.
@@ -399,6 +453,24 @@ public interface ProcessingPackage extends EPackage
 	int LOAD_ALL_DATA_OPERATION__ENTITY_NAME = LOAD_DATA_OPERATION__ENTITY_NAME;
 
 	/**
+	 * The feature id for the '<em><b>Characteristic Containers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOAD_ALL_DATA_OPERATION__CHARACTERISTIC_CONTAINERS = LOAD_DATA_OPERATION__CHARACTERISTIC_CONTAINERS;
+
+	/**
+	 * The feature id for the '<em><b>Characteristics</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOAD_ALL_DATA_OPERATION__CHARACTERISTICS = LOAD_DATA_OPERATION__CHARACTERISTICS;
+
+	/**
 	 * The feature id for the '<em><b>Container</b></em>' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -497,6 +569,24 @@ public interface ProcessingPackage extends EPackage
 	 * @ordered
 	 */
 	int PERFORM_DATA_TRANSMISSION_OPERATION__ENTITY_NAME = DATA_OPERATION__ENTITY_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Characteristic Containers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERFORM_DATA_TRANSMISSION_OPERATION__CHARACTERISTIC_CONTAINERS = DATA_OPERATION__CHARACTERISTIC_CONTAINERS;
+
+	/**
+	 * The feature id for the '<em><b>Characteristics</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERFORM_DATA_TRANSMISSION_OPERATION__CHARACTERISTICS = DATA_OPERATION__CHARACTERISTICS;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' container reference.
@@ -599,6 +689,24 @@ public interface ProcessingPackage extends EPackage
 	int CONSUME_DATA_OPERATION__ENTITY_NAME = DATA_OPERATION__ENTITY_NAME;
 
 	/**
+	 * The feature id for the '<em><b>Characteristic Containers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSUME_DATA_OPERATION__CHARACTERISTIC_CONTAINERS = DATA_OPERATION__CHARACTERISTIC_CONTAINERS;
+
+	/**
+	 * The feature id for the '<em><b>Characteristics</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSUME_DATA_OPERATION__CHARACTERISTICS = DATA_OPERATION__CHARACTERISTICS;
+
+	/**
 	 * The feature id for the '<em><b>Container</b></em>' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -679,6 +787,24 @@ public interface ProcessingPackage extends EPackage
 	 * @ordered
 	 */
 	int STORE_DATA_OPERATION__ENTITY_NAME = CONSUME_DATA_OPERATION__ENTITY_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Characteristic Containers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORE_DATA_OPERATION__CHARACTERISTIC_CONTAINERS = CONSUME_DATA_OPERATION__CHARACTERISTIC_CONTAINERS;
+
+	/**
+	 * The feature id for the '<em><b>Characteristics</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORE_DATA_OPERATION__CHARACTERISTICS = CONSUME_DATA_OPERATION__CHARACTERISTICS;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' container reference.
@@ -772,6 +898,24 @@ public interface ProcessingPackage extends EPackage
 	int RETURN_DATA_OPERATION__ENTITY_NAME = CONSUME_DATA_OPERATION__ENTITY_NAME;
 
 	/**
+	 * The feature id for the '<em><b>Characteristic Containers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RETURN_DATA_OPERATION__CHARACTERISTIC_CONTAINERS = CONSUME_DATA_OPERATION__CHARACTERISTIC_CONTAINERS;
+
+	/**
+	 * The feature id for the '<em><b>Characteristics</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RETURN_DATA_OPERATION__CHARACTERISTICS = CONSUME_DATA_OPERATION__CHARACTERISTICS;
+
+	/**
 	 * The feature id for the '<em><b>Container</b></em>' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -863,6 +1007,24 @@ public interface ProcessingPackage extends EPackage
 	int USER_READ_DATA__ENTITY_NAME = CONSUME_DATA_OPERATION__ENTITY_NAME;
 
 	/**
+	 * The feature id for the '<em><b>Characteristic Containers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_READ_DATA__CHARACTERISTIC_CONTAINERS = CONSUME_DATA_OPERATION__CHARACTERISTIC_CONTAINERS;
+
+	/**
+	 * The feature id for the '<em><b>Characteristics</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_READ_DATA__CHARACTERISTICS = CONSUME_DATA_OPERATION__CHARACTERISTICS;
+
+	/**
 	 * The feature id for the '<em><b>Container</b></em>' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -945,6 +1107,24 @@ public interface ProcessingPackage extends EPackage
 	int SYSTEM_DISCARD_DATA__ENTITY_NAME = CONSUME_DATA_OPERATION__ENTITY_NAME;
 
 	/**
+	 * The feature id for the '<em><b>Characteristic Containers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_DISCARD_DATA__CHARACTERISTIC_CONTAINERS = CONSUME_DATA_OPERATION__CHARACTERISTIC_CONTAINERS;
+
+	/**
+	 * The feature id for the '<em><b>Characteristics</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_DISCARD_DATA__CHARACTERISTICS = CONSUME_DATA_OPERATION__CHARACTERISTICS;
+
+	/**
 	 * The feature id for the '<em><b>Container</b></em>' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1025,6 +1205,24 @@ public interface ProcessingPackage extends EPackage
 	 * @ordered
 	 */
 	int MANY_TO_ONE_DATA_OPERATION__ENTITY_NAME = DATA_OPERATION__ENTITY_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Characteristic Containers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MANY_TO_ONE_DATA_OPERATION__CHARACTERISTIC_CONTAINERS = DATA_OPERATION__CHARACTERISTIC_CONTAINERS;
+
+	/**
+	 * The feature id for the '<em><b>Characteristics</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MANY_TO_ONE_DATA_OPERATION__CHARACTERISTICS = DATA_OPERATION__CHARACTERISTICS;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' container reference.
@@ -1118,6 +1316,24 @@ public interface ProcessingPackage extends EPackage
 	int JOIN_DATA_OPERATION__ENTITY_NAME = MANY_TO_ONE_DATA_OPERATION__ENTITY_NAME;
 
 	/**
+	 * The feature id for the '<em><b>Characteristic Containers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JOIN_DATA_OPERATION__CHARACTERISTIC_CONTAINERS = MANY_TO_ONE_DATA_OPERATION__CHARACTERISTIC_CONTAINERS;
+
+	/**
+	 * The feature id for the '<em><b>Characteristics</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JOIN_DATA_OPERATION__CHARACTERISTICS = MANY_TO_ONE_DATA_OPERATION__CHARACTERISTICS;
+
+	/**
 	 * The feature id for the '<em><b>Container</b></em>' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1209,6 +1425,24 @@ public interface ProcessingPackage extends EPackage
 	int UNION_DATA_OPERATION__ENTITY_NAME = MANY_TO_ONE_DATA_OPERATION__ENTITY_NAME;
 
 	/**
+	 * The feature id for the '<em><b>Characteristic Containers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNION_DATA_OPERATION__CHARACTERISTIC_CONTAINERS = MANY_TO_ONE_DATA_OPERATION__CHARACTERISTIC_CONTAINERS;
+
+	/**
+	 * The feature id for the '<em><b>Characteristics</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNION_DATA_OPERATION__CHARACTERISTICS = MANY_TO_ONE_DATA_OPERATION__CHARACTERISTICS;
+
+	/**
 	 * The feature id for the '<em><b>Container</b></em>' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1298,6 +1532,24 @@ public interface ProcessingPackage extends EPackage
 	 * @ordered
 	 */
 	int TRANSFORM_DATA_OPERATION__ENTITY_NAME = DATA_OPERATION__ENTITY_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Characteristic Containers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSFORM_DATA_OPERATION__CHARACTERISTIC_CONTAINERS = DATA_OPERATION__CHARACTERISTIC_CONTAINERS;
+
+	/**
+	 * The feature id for the '<em><b>Characteristics</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSFORM_DATA_OPERATION__CHARACTERISTICS = DATA_OPERATION__CHARACTERISTICS;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' container reference.
@@ -1400,6 +1652,24 @@ public interface ProcessingPackage extends EPackage
 	int PROJECTION_DATA_OPERATION__ENTITY_NAME = TRANSFORM_DATA_OPERATION__ENTITY_NAME;
 
 	/**
+	 * The feature id for the '<em><b>Characteristic Containers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECTION_DATA_OPERATION__CHARACTERISTIC_CONTAINERS = TRANSFORM_DATA_OPERATION__CHARACTERISTIC_CONTAINERS;
+
+	/**
+	 * The feature id for the '<em><b>Characteristics</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECTION_DATA_OPERATION__CHARACTERISTICS = TRANSFORM_DATA_OPERATION__CHARACTERISTICS;
+
+	/**
 	 * The feature id for the '<em><b>Container</b></em>' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1498,6 +1768,24 @@ public interface ProcessingPackage extends EPackage
 	 * @ordered
 	 */
 	int SELECTION_DATA_OPERATION__ENTITY_NAME = TRANSFORM_DATA_OPERATION__ENTITY_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Characteristic Containers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELECTION_DATA_OPERATION__CHARACTERISTIC_CONTAINERS = TRANSFORM_DATA_OPERATION__CHARACTERISTIC_CONTAINERS;
+
+	/**
+	 * The feature id for the '<em><b>Characteristics</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELECTION_DATA_OPERATION__CHARACTERISTICS = TRANSFORM_DATA_OPERATION__CHARACTERISTICS;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' container reference.
@@ -1600,6 +1888,24 @@ public interface ProcessingPackage extends EPackage
 	int CHARACTERISTIC_CHANGING_DATA_OPERATION__ENTITY_NAME = DATA_OPERATION__ENTITY_NAME;
 
 	/**
+	 * The feature id for the '<em><b>Characteristic Containers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHARACTERISTIC_CHANGING_DATA_OPERATION__CHARACTERISTIC_CONTAINERS = DATA_OPERATION__CHARACTERISTIC_CONTAINERS;
+
+	/**
+	 * The feature id for the '<em><b>Characteristics</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHARACTERISTIC_CHANGING_DATA_OPERATION__CHARACTERISTICS = DATA_OPERATION__CHARACTERISTICS;
+
+	/**
 	 * The feature id for the '<em><b>Container</b></em>' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1698,6 +2004,24 @@ public interface ProcessingPackage extends EPackage
 	 * @ordered
 	 */
 	int EFFECT_SPECIFYING_TRANSFORM_DATA_OPERATION__ENTITY_NAME = TRANSFORM_DATA_OPERATION__ENTITY_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Characteristic Containers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EFFECT_SPECIFYING_TRANSFORM_DATA_OPERATION__CHARACTERISTIC_CONTAINERS = TRANSFORM_DATA_OPERATION__CHARACTERISTIC_CONTAINERS;
+
+	/**
+	 * The feature id for the '<em><b>Characteristics</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EFFECT_SPECIFYING_TRANSFORM_DATA_OPERATION__CHARACTERISTICS = TRANSFORM_DATA_OPERATION__CHARACTERISTICS;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' container reference.
@@ -1809,6 +2133,24 @@ public interface ProcessingPackage extends EPackage
 	int PROCESSING_EFFECT_OPERATION_TYPE_SPECIFYING_OPERATION__ENTITY_NAME = DATA_OPERATION__ENTITY_NAME;
 
 	/**
+	 * The feature id for the '<em><b>Characteristic Containers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESSING_EFFECT_OPERATION_TYPE_SPECIFYING_OPERATION__CHARACTERISTIC_CONTAINERS = DATA_OPERATION__CHARACTERISTIC_CONTAINERS;
+
+	/**
+	 * The feature id for the '<em><b>Characteristics</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESSING_EFFECT_OPERATION_TYPE_SPECIFYING_OPERATION__CHARACTERISTICS = DATA_OPERATION__CHARACTERISTICS;
+
+	/**
 	 * The feature id for the '<em><b>Container</b></em>' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1889,6 +2231,24 @@ public interface ProcessingPackage extends EPackage
 	 * @ordered
 	 */
 	int DELETE_DATA_OPERATION__ENTITY_NAME = CONSUME_DATA_OPERATION__ENTITY_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Characteristic Containers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DELETE_DATA_OPERATION__CHARACTERISTIC_CONTAINERS = CONSUME_DATA_OPERATION__CHARACTERISTIC_CONTAINERS;
+
+	/**
+	 * The feature id for the '<em><b>Characteristics</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DELETE_DATA_OPERATION__CHARACTERISTICS = CONSUME_DATA_OPERATION__CHARACTERISTICS;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' container reference.

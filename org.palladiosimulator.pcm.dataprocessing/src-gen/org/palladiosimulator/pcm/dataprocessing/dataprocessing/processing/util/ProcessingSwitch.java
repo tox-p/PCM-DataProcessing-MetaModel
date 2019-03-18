@@ -13,6 +13,7 @@ import org.palladiosimulator.pcm.core.entity.Entity;
 import org.palladiosimulator.pcm.core.entity.NamedElement;
 
 import org.palladiosimulator.pcm.dataprocessing.dataprocessing.characteristics.CharacteristicType;
+import org.palladiosimulator.pcm.dataprocessing.dataprocessing.characteristics.Characterizable;
 
 import org.palladiosimulator.pcm.dataprocessing.dataprocessing.processing.*;
 
@@ -94,6 +95,7 @@ public class ProcessingSwitch<T1> extends Switch<T1>
 				DataOperation dataOperation = (DataOperation)theEObject;
 				T1 result = caseDataOperation(dataOperation);
 				if (result == null) result = caseEntity(dataOperation);
+				if (result == null) result = caseCharacterizable(dataOperation);
 				if (result == null) result = caseIdentifier(dataOperation);
 				if (result == null) result = caseNamedElement(dataOperation);
 				if (result == null) result = defaultCase(theEObject);
@@ -105,6 +107,7 @@ public class ProcessingSwitch<T1> extends Switch<T1>
 				T1 result = caseCreateDataOperation(createDataOperation);
 				if (result == null) result = caseDataOperation(createDataOperation);
 				if (result == null) result = caseEntity(createDataOperation);
+				if (result == null) result = caseCharacterizable(createDataOperation);
 				if (result == null) result = caseIdentifier(createDataOperation);
 				if (result == null) result = caseNamedElement(createDataOperation);
 				if (result == null) result = defaultCase(theEObject);
@@ -117,6 +120,7 @@ public class ProcessingSwitch<T1> extends Switch<T1>
 				if (result == null) result = caseCreateDataOperation(loadDataOperation);
 				if (result == null) result = caseDataOperation(loadDataOperation);
 				if (result == null) result = caseEntity(loadDataOperation);
+				if (result == null) result = caseCharacterizable(loadDataOperation);
 				if (result == null) result = caseIdentifier(loadDataOperation);
 				if (result == null) result = caseNamedElement(loadDataOperation);
 				if (result == null) result = defaultCase(theEObject);
@@ -130,6 +134,7 @@ public class ProcessingSwitch<T1> extends Switch<T1>
 				if (result == null) result = caseCreateDataOperation(loadAllDataOperation);
 				if (result == null) result = caseDataOperation(loadAllDataOperation);
 				if (result == null) result = caseEntity(loadAllDataOperation);
+				if (result == null) result = caseCharacterizable(loadAllDataOperation);
 				if (result == null) result = caseIdentifier(loadAllDataOperation);
 				if (result == null) result = caseNamedElement(loadAllDataOperation);
 				if (result == null) result = defaultCase(theEObject);
@@ -141,6 +146,7 @@ public class ProcessingSwitch<T1> extends Switch<T1>
 				T1 result = casePerformDataTransmissionOperation(performDataTransmissionOperation);
 				if (result == null) result = caseDataOperation(performDataTransmissionOperation);
 				if (result == null) result = caseEntity(performDataTransmissionOperation);
+				if (result == null) result = caseCharacterizable(performDataTransmissionOperation);
 				if (result == null) result = caseIdentifier(performDataTransmissionOperation);
 				if (result == null) result = caseNamedElement(performDataTransmissionOperation);
 				if (result == null) result = defaultCase(theEObject);
@@ -152,6 +158,7 @@ public class ProcessingSwitch<T1> extends Switch<T1>
 				T1 result = caseConsumeDataOperation(consumeDataOperation);
 				if (result == null) result = caseDataOperation(consumeDataOperation);
 				if (result == null) result = caseEntity(consumeDataOperation);
+				if (result == null) result = caseCharacterizable(consumeDataOperation);
 				if (result == null) result = caseIdentifier(consumeDataOperation);
 				if (result == null) result = caseNamedElement(consumeDataOperation);
 				if (result == null) result = defaultCase(theEObject);
@@ -164,6 +171,7 @@ public class ProcessingSwitch<T1> extends Switch<T1>
 				if (result == null) result = caseConsumeDataOperation(storeDataOperation);
 				if (result == null) result = caseDataOperation(storeDataOperation);
 				if (result == null) result = caseEntity(storeDataOperation);
+				if (result == null) result = caseCharacterizable(storeDataOperation);
 				if (result == null) result = caseIdentifier(storeDataOperation);
 				if (result == null) result = caseNamedElement(storeDataOperation);
 				if (result == null) result = defaultCase(theEObject);
@@ -176,6 +184,7 @@ public class ProcessingSwitch<T1> extends Switch<T1>
 				if (result == null) result = caseConsumeDataOperation(returnDataOperation);
 				if (result == null) result = caseDataOperation(returnDataOperation);
 				if (result == null) result = caseEntity(returnDataOperation);
+				if (result == null) result = caseCharacterizable(returnDataOperation);
 				if (result == null) result = caseIdentifier(returnDataOperation);
 				if (result == null) result = caseNamedElement(returnDataOperation);
 				if (result == null) result = defaultCase(theEObject);
@@ -188,6 +197,7 @@ public class ProcessingSwitch<T1> extends Switch<T1>
 				if (result == null) result = caseConsumeDataOperation(userReadData);
 				if (result == null) result = caseDataOperation(userReadData);
 				if (result == null) result = caseEntity(userReadData);
+				if (result == null) result = caseCharacterizable(userReadData);
 				if (result == null) result = caseIdentifier(userReadData);
 				if (result == null) result = caseNamedElement(userReadData);
 				if (result == null) result = defaultCase(theEObject);
@@ -200,6 +210,7 @@ public class ProcessingSwitch<T1> extends Switch<T1>
 				if (result == null) result = caseConsumeDataOperation(systemDiscardData);
 				if (result == null) result = caseDataOperation(systemDiscardData);
 				if (result == null) result = caseEntity(systemDiscardData);
+				if (result == null) result = caseCharacterizable(systemDiscardData);
 				if (result == null) result = caseIdentifier(systemDiscardData);
 				if (result == null) result = caseNamedElement(systemDiscardData);
 				if (result == null) result = defaultCase(theEObject);
@@ -211,6 +222,7 @@ public class ProcessingSwitch<T1> extends Switch<T1>
 				T1 result = caseManyToOneDataOperation(manyToOneDataOperation);
 				if (result == null) result = caseDataOperation(manyToOneDataOperation);
 				if (result == null) result = caseEntity(manyToOneDataOperation);
+				if (result == null) result = caseCharacterizable(manyToOneDataOperation);
 				if (result == null) result = caseIdentifier(manyToOneDataOperation);
 				if (result == null) result = caseNamedElement(manyToOneDataOperation);
 				if (result == null) result = defaultCase(theEObject);
@@ -223,6 +235,7 @@ public class ProcessingSwitch<T1> extends Switch<T1>
 				if (result == null) result = caseManyToOneDataOperation(joinDataOperation);
 				if (result == null) result = caseDataOperation(joinDataOperation);
 				if (result == null) result = caseEntity(joinDataOperation);
+				if (result == null) result = caseCharacterizable(joinDataOperation);
 				if (result == null) result = caseIdentifier(joinDataOperation);
 				if (result == null) result = caseNamedElement(joinDataOperation);
 				if (result == null) result = defaultCase(theEObject);
@@ -235,6 +248,7 @@ public class ProcessingSwitch<T1> extends Switch<T1>
 				if (result == null) result = caseManyToOneDataOperation(unionDataOperation);
 				if (result == null) result = caseDataOperation(unionDataOperation);
 				if (result == null) result = caseEntity(unionDataOperation);
+				if (result == null) result = caseCharacterizable(unionDataOperation);
 				if (result == null) result = caseIdentifier(unionDataOperation);
 				if (result == null) result = caseNamedElement(unionDataOperation);
 				if (result == null) result = defaultCase(theEObject);
@@ -246,6 +260,7 @@ public class ProcessingSwitch<T1> extends Switch<T1>
 				T1 result = caseTransformDataOperation(transformDataOperation);
 				if (result == null) result = caseDataOperation(transformDataOperation);
 				if (result == null) result = caseEntity(transformDataOperation);
+				if (result == null) result = caseCharacterizable(transformDataOperation);
 				if (result == null) result = caseIdentifier(transformDataOperation);
 				if (result == null) result = caseNamedElement(transformDataOperation);
 				if (result == null) result = defaultCase(theEObject);
@@ -258,6 +273,7 @@ public class ProcessingSwitch<T1> extends Switch<T1>
 				if (result == null) result = caseTransformDataOperation(projectionDataOperation);
 				if (result == null) result = caseDataOperation(projectionDataOperation);
 				if (result == null) result = caseEntity(projectionDataOperation);
+				if (result == null) result = caseCharacterizable(projectionDataOperation);
 				if (result == null) result = caseIdentifier(projectionDataOperation);
 				if (result == null) result = caseNamedElement(projectionDataOperation);
 				if (result == null) result = defaultCase(theEObject);
@@ -270,6 +286,7 @@ public class ProcessingSwitch<T1> extends Switch<T1>
 				if (result == null) result = caseTransformDataOperation(selectionDataOperation);
 				if (result == null) result = caseDataOperation(selectionDataOperation);
 				if (result == null) result = caseEntity(selectionDataOperation);
+				if (result == null) result = caseCharacterizable(selectionDataOperation);
 				if (result == null) result = caseIdentifier(selectionDataOperation);
 				if (result == null) result = caseNamedElement(selectionDataOperation);
 				if (result == null) result = defaultCase(theEObject);
@@ -281,6 +298,7 @@ public class ProcessingSwitch<T1> extends Switch<T1>
 				T1 result = caseCharacteristicChangingDataOperation(characteristicChangingDataOperation);
 				if (result == null) result = caseDataOperation(characteristicChangingDataOperation);
 				if (result == null) result = caseEntity(characteristicChangingDataOperation);
+				if (result == null) result = caseCharacterizable(characteristicChangingDataOperation);
 				if (result == null) result = caseIdentifier(characteristicChangingDataOperation);
 				if (result == null) result = caseNamedElement(characteristicChangingDataOperation);
 				if (result == null) result = defaultCase(theEObject);
@@ -294,6 +312,7 @@ public class ProcessingSwitch<T1> extends Switch<T1>
 				if (result == null) result = caseProcessingEffectOperationTypeSpecifyingOperation(effectSpecifyingTransformDataOperation);
 				if (result == null) result = caseDataOperation(effectSpecifyingTransformDataOperation);
 				if (result == null) result = caseEntity(effectSpecifyingTransformDataOperation);
+				if (result == null) result = caseCharacterizable(effectSpecifyingTransformDataOperation);
 				if (result == null) result = caseIdentifier(effectSpecifyingTransformDataOperation);
 				if (result == null) result = caseNamedElement(effectSpecifyingTransformDataOperation);
 				if (result == null) result = defaultCase(theEObject);
@@ -305,6 +324,7 @@ public class ProcessingSwitch<T1> extends Switch<T1>
 				T1 result = caseProcessingEffectOperationTypeSpecifyingOperation(processingEffectOperationTypeSpecifyingOperation);
 				if (result == null) result = caseDataOperation(processingEffectOperationTypeSpecifyingOperation);
 				if (result == null) result = caseEntity(processingEffectOperationTypeSpecifyingOperation);
+				if (result == null) result = caseCharacterizable(processingEffectOperationTypeSpecifyingOperation);
 				if (result == null) result = caseIdentifier(processingEffectOperationTypeSpecifyingOperation);
 				if (result == null) result = caseNamedElement(processingEffectOperationTypeSpecifyingOperation);
 				if (result == null) result = defaultCase(theEObject);
@@ -317,6 +337,7 @@ public class ProcessingSwitch<T1> extends Switch<T1>
 				if (result == null) result = caseConsumeDataOperation(deleteDataOperation);
 				if (result == null) result = caseDataOperation(deleteDataOperation);
 				if (result == null) result = caseEntity(deleteDataOperation);
+				if (result == null) result = caseCharacterizable(deleteDataOperation);
 				if (result == null) result = caseIdentifier(deleteDataOperation);
 				if (result == null) result = caseNamedElement(deleteDataOperation);
 				if (result == null) result = defaultCase(theEObject);
@@ -706,6 +727,22 @@ public class ProcessingSwitch<T1> extends Switch<T1>
 	 * @generated
 	 */
 	public T1 caseEntity(Entity object)
+	{
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Characterizable</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Characterizable</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T1 caseCharacterizable(Characterizable object)
 	{
 		return null;
 	}
