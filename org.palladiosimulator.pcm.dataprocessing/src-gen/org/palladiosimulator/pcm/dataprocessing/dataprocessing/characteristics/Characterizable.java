@@ -37,7 +37,7 @@ public interface Characterizable extends CDOObject
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Characteristic Containers</em>' containment reference list.
 	 * @see org.palladiosimulator.pcm.dataprocessing.dataprocessing.characteristics.CharacteristicsPackage#getCharacterizable_CharacteristicContainers()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<CharacteristicContainer> getCharacteristicContainers();

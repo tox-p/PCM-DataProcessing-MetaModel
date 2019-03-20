@@ -651,7 +651,7 @@ public class CharacteristicsPackageImpl extends EPackageImpl implements Characte
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(characterizableEClass, Characterizable.class, "Characterizable", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getCharacterizable_CharacteristicContainers(), this.getCharacteristicContainer(), null, "characteristicContainers", null, 1, -1, Characterizable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCharacterizable_CharacteristicContainers(), this.getCharacteristicContainer(), null, "characteristicContainers", null, 0, -1, Characterizable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCharacterizable_Characteristics(), this.getCharacteristic(), null, "characteristics", null, 0, -1, Characterizable.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(characteristicTypeContainerEClass, CharacteristicTypeContainer.class, "CharacteristicTypeContainer", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

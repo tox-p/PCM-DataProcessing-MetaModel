@@ -325,8 +325,7 @@
     </eAnnotations>
     <eClassifiers xsi:type="ecore:EClass" name="Characterizable" abstract="true">
       <eStructuralFeatures xsi:type="ecore:EReference" name="characteristicContainers"
-          lowerBound="1" upperBound="-1" eType="#//characteristics/CharacteristicContainer"
-          containment="true"/>
+          upperBound="-1" eType="#//characteristics/CharacteristicContainer" containment="true"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="characteristics" upperBound="-1"
           eType="#//characteristics/Characteristic" changeable="false" volatile="true"
           transient="true" derived="true">
